@@ -1,0 +1,165 @@
+/* 
+body{
+    font-size:2rem ;
+    font-family: monospace;
+} */
+/* a{
+    text-decoration: none;
+    cursor:crosshair;
+    color:rgb(99, reen, blue);
+} */
+
+/* a:visited{
+    color:red;
+}
+a:hover{
+    color:chartreuse;
+}
+a:active{
+    color: darkolivegreen;
+
+}
+
+body{
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: monospace;
+
+}
+ol{
+    list-style-type:upper-roman;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: red;
+    /* list-style-image: url("../HTML/images/lion.jpeg");width: 300px; */
+}
+/* ul li{
+    color: green;
+
+}
+ul li:nth-child(2){
+    color:red;
+}
+ul li:nth-child(2){
+    color:blue;
+}
+
+ul ::marker{
+    color: purple;
+    font-family: fantasy;
+    font-size: 2rem;
+    content: "10% off ";
+} */ *
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* body{
+    font-size: 2rem;
+    font-family: monospace;
+
+
+} */
+/* ul{
+    padding: 0.5rem;
+    text-align: right;
+    background-color: black;
+
+} */
+/* a
+{
+    text-decoration: none;
+    color: blue;
+
+} */
+/* a:hover{
+    color: blue;
+} */
+
+/* li{
+    display: inline-block;
+}  */
+
+
+
+/* body{font-size: 2rem;
+    font-family: monospace;
+
+
+}
+.columns{
+    column-count:4;
+    column-width: 250px;
+    column-rule: 4px dotted black;
+    column-gap: 3rem;
+}
+
+.columns p{
+    margin-top: 0;
+}
+.columns.quote{
+    margin-top:  2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    column-span: all;
+
+}
+.nowrap{
+    white-space: nowrap;
+} */
+
+
+/* Position */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size:  2rem;
+    font-family: monospace;
+}
+
+.outer-container{
+    border: 3px solid red;
+    width: 900px;
+    height:500px;
+    margin: 90px;
+
+
+}
+
+.inner-container{
+    border: 3px solid blue;
+    width: 700px;
+    height:300px;
+    margin: 50px;
+    position: relative;
+
+}
+.box{
+
+    width: 150px;
+    height:100px;
+    margin: 30px;
+    color:green;
+    padding: 1rem;
+
+
+}
+.absolute{
+    background-color: green;
+    position:absolute;
+    top:200px;
+    right: 100px;
+    left:100px;
+}

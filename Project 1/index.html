@@ -1,0 +1,210 @@
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="menu">​
+       <nav>
+        <ul>
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Now Playing</a></li>
+          <li><a href="#section3">Coming Soon</a></li>
+          <li><a href="#section4">On Demand</a></li>
+        </ul>
+
+      </nav>
+    
+      <main>
+      
+        <h1>Welcome to our Movie Website!</h1>
+
+        <section id="section1">
+              <h2>Featured Movies</h2>
+              <div class="scroll-container">
+                <div class="row">
+                  <div class="column" >
+                    
+                    <img src="Images/tf.jpeg" alt="Image 1" >
+                    <h4 class="heading">Transformaers:Rise of the Beasts</h4>
+                  </div> 
+                  <div class="column">
+                    <img src="Images/IJ.jpeg" alt="Image 2" >
+                    <h4>Indiana Jones And The Dial of Destiny</h4>
+                  </div> 
+                
+                  <div class="column">
+                    <img src="Images/sp.webp" alt="Image 3" >
+                    <h4>Spider-Man:Across The Spider-Verse</h4>
+                  </div>
+                  <div class="column">
+                    <img src="Images/Guar.jpeg" alt="Image 4" >
+                    <h4>Guardians of the Galaxy Vol.3</h4>
+                  </div>
+                  <div class="column">
+                    <img src="Images/TH.jpg" alt="Image 5" >
+                    <h4>The Flash</h4>
+                    
+                  </div>
+                </div>
+              
+            
+          </section>
+        
+    
+        <section id="section2">
+          <h1>Now Playing</h1>
+          <div class="row">
+            <div class="column">
+              <video width="400" height="400" controls="controls">
+              <source src="Audio/TF.mp4" type="video/mp4">
+              </video>
+              <h4>Transformaers:Rise of the Beasts</h4>
+            </div>
+            <div class="column">
+                <video width="400" height="400" controls="controls">
+                <source src="Audio/spider-man.mp4" type="video/mp4">
+                </video>
+                <h4>Spider-Man:Across The Spider-Verse</h4>
+            </div>
+        
+          <div class="column">
+          <video width="400" height="400" controls="controls">
+            <source src="Audio/alpha.mp4" type="video/mp4">
+            </video>
+            <h4>Alpha</h4>
+          </div>
+        </section>
+
+        <section id="section3">
+            <h1>Coming Sooning</h1>
+            <div class="row">
+                <div class="column">
+                <!-- <div class="container"> -->
+                <img src="Images/MI-DRPO.jpeg" alt="Image 6">
+                <!-- <div class="bottom-left">Mission:Impossile-Dead Reckoning Part One
+                    2 HR 43 MIN | Opeaning Jul 12,2023 </div> -->
+                <h4>Impossile-Dead Reckoning Part One</h4>
+                <h5>2 HR 43 MIN | Opeaning Jul 12,2023</h5>
+            
+              </div>
+              <div class="column">
+                <img src="Images/HM.jpeg" alt="Image 7">
+                <h4>Haunted Mansion Early Access</h4>
+                <h5>2 HR 2 MIN | Opening Jul 26, 2023</h5>
+              </div>
+              <div class="column">
+                <img src="Images/HMEA.webp" alt="Image 8">
+                <h4>Haunted Mansion Early Access</h4>
+                <h5>2 HR 2 MIN | Opening Jul 26, 2023</h5>
+              </div>
+              <div class="column">
+                <img src="Images/TFSD.webp" alt="Image 9">
+                <h4>Haunted Mansion Early Access</h4>
+                <h5>2 HR 2 MIN | Opening Jul 26, 2023</h5>
+              </div>
+            </div>
+         </section>
+
+         
+         <section id="section4">
+            <h1>Featured On Demand</h1>
+            <div class="row">
+              <div class="column container">
+                <img src="Images/65.jpeg" alt="Image 10" onclick="openVideo('https://www.youtube.com/embed/bHXejJq5vr0')">
+                <h4>65</h4>
+                <div class="videoModal modal">
+                  <span class="close" onclick="closeVideo(this)">&times;</span>
+                  <iframe class="videoFrame" width="450" height="300" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+          
+              <div class="column">
+                <img src="Images/Assassin.jpeg" alt="Image 11" onclick="openVideo('https://www.youtube.com/embed/qiUATuIhUw8')">
+                <h4>Assassin</h4>
+                <div class="videoModal modal">
+                  <span class="close" onclick="closeVideo(this)">&times;</span>
+                  <iframe class="videoFrame"width="450" height="300"  frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+          
+              <div class="column">
+                <img src="Images/Super Mario.jpeg" alt="Image 12" onclick="openVideo('https://www.youtube.com/embed/TnGl01FkMMo')">
+                <h4>The Super Mario Bros</h4>
+                <div class="videoModal modal">
+                    <span class="close" onclick="closeVideo(this)">&times;</span>
+                    <iframe class="videoFrame" width="450" height="300" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+          
+              <div class="column">
+                <img src="Images/Scream.jpeg" alt="Image 13" onclick="openVideo('https://www.youtube.com/watch?v=h74AXqw4Opc&t=13s')">
+                <h4>Scream VI</h4>
+                <div class="videoModal modal">
+                  <span class="close" onclick="closeVideo(this)">&times;</span>
+                  <iframe class="videoFrame" width="450" height="300" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <script>
+                function openVideo(videoUrl) {
+                  var modal = event.target.parentNode.nextElementSibling;
+                  var iframe = modal.querySelector(".videoFrame");
+                  iframe.src = videoUrl;
+                  modal.style.display = "block";
+                }
+              
+                function closeVideo(element) {
+                  var modal = element.parentNode.parentNode;
+                  var iframe = modal.querySelector(".videoFrame");
+                  iframe.src = "";
+                  modal.style.display = "none";
+                }
+              </script>
+          </section>
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          
+           
+          
+          
+      </main>
+    </div>
+
+      <footer>
+          <div class="footer-line1">
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">Now Playing</a></li>
+            <li><a href="#section3">Coming Soon</a></li>
+            <li><a href="#section4">On Demand</a></li>
+           
+        </div>
+        <div class="footer-line2">
+          @Summer2023 Tech Talent Pipeline
+        </div>
+        <div class="footer-line2">
+         Zhigang Hao
+        </div>
+        <div class="footer-line2">
+          zhigang017@gmail.com
+        </div>
+      </footer>
+
+
+</body>
+</html>
+
+
+
+
