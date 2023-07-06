@@ -109,7 +109,7 @@ function check() {
 
     if (!inputUser) {
         changeMsg("Please enter a valid number");
-    }
+    }git fetch origin
 
     if (inputUser === randomNum) {
         changeMsg("You win");
